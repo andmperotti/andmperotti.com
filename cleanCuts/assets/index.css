@@ -1,0 +1,195 @@
+/* import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+
+/* background gradient */
+html{
+    background: linear-gradient(grey, red)
+}
+
+/* Header */
+header{
+    width: 80%;
+    margin: 0 10%;
+}
+
+header nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    padding: 0;
+    border-bottom: 2px dashed white;
+    margin-bottom: 1%;
+    
+}
+header nav ul li{
+    list-style-type: none;
+    margin: 0 1%;
+    font-size: 150%;
+    
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: black
+}
+header nav ul li a:hover{
+    color: red;
+}
+.businessName{
+    font-family: "Tilt Prism";
+    font-size: 230%;
+}
+
+
+
+/* Each section base sizing/styling */
+body > section, .hours, .location{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 10%;
+    width: 80%;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border: 2px black dotted;
+}
+/* styling and layout for the main */
+main{
+    width: 80%;
+    margin: 0 10%;
+}
+main img{
+    width: 100%;
+}
+/* styling and layout for the about section */
+.daysHours{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+/* base class to flex and justify-content center */
+.flexCenter{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Gallery img layout */
+.galleryImages, .contactIcons, i{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: baseline;
+    list-style-type: none;
+    color: rgb(98, 88, 88);
+    
+}
+i{
+    padding: 0 5px;
+}
+
+.galleryImages img{
+    width: 20%;
+}
+#contact{
+    border-bottom: 1px solid rgb(92, 89, 89);
+}
+.creator a {
+    color: rgb(56, 53, 53);
+    text-decoration: none;
+}
+/* navigation menu button useful for when users scroll down the page and away from the header nav links, also will be helpful on smaller devices where we'll hide those header nav links */
+#navMenu{
+    display: list-item;
+    position: fixed;
+    top: 25px;
+    left: 1px;
+    width: 8%;
+    color: white;
+    
+}
+
+/* hide nav menu; this styling is for the menu that will popup via js event method */
+.buttonNav{
+    position: fixed;
+    display: inline-block;
+    visibility: hidden;
+    background-color: rgb(255, 255, 255);
+    width: 110px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 5px solid black;
+    
+}
+.buttonNav ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.buttonNav li{
+    list-style-type: none;
+    padding: 0;
+    margin: 10% 0;
+}
+.buttonNav a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 120%;;
+}
+.businessName.side{
+    border-bottom: 1px dashed black;
+}
+
+
+
+
+
+/* add a class to use in javascript for showing and hiding the side menu via toggle */
+.hideShow{
+    visibility: visible;
+    display: inline-block;
+}
+
+
+
+/* media queries for smaller devices (tablet and mobile) */
+/*0px wide up to 750px wide*/
+@media all and (max-width: 750px){
+    header li a:not(.businessName){
+        display: none;
+    }
+    header nav ul{
+        border-bottom: none;
+    }
+    i.fa-5x{
+        font-size: 3em;
+    }
+}
+
+/* devices between 750 and 1050px wide */
+@media all and (max-width: 1050px){
+    .galleryImages{
+        justify-content: center;
+    }
+    .galleryImages img{
+        width: 35%;
+    }
+}
+/* Any devices smaller than 550px wide */
+@media all and (max-width: 550px){
+
+    .galleryImages img{
+        width: 40%;
+    }
+}
