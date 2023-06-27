@@ -3834,7 +3834,17 @@ input, select, textarea {
 	}
 
 	/* Styling and laying out the iMac image for the first sites section */
-	.imac{
+	section.main.special header.major img.imac{
+		width: 80%;
+	}
+		
+	@media all and (max-width: 950px){
+		img.imac{
+			width: 70%;
+		}
+	}
+		/* Styling and laying out the iMac image for the first sites section */
+	section.main.special header.major img.imac{
 		width: 80%;
 	}
 		
