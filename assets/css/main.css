@@ -3330,9 +3330,7 @@ input, select, textarea {
 				}
 
 		}
-	.navLinks {
-		color: black;
-	}
+
 /* Main */
 
 	#main {
@@ -3785,12 +3783,12 @@ input, select, textarea {
 			}
 
 		}
-	/* techStack, for the container of logos that describe my tools */
+		/* techStack, for the container of logos that describe my tools */
 	.techStack {
 		display: flex;
 		justify-content: center;
 	}
-	/* tech class for icons in about me for tech stach */
+	/* tech class for icons in about me for tech stack */
 	.tech{
 		font-size: 2.5rem;
 		list-style-type: none;
@@ -3834,16 +3832,6 @@ input, select, textarea {
 	}
 
 	/* Styling and laying out the iMac image for the first sites section */
-	section.main.special header.major img.imac{
-		width: 80%;
-	}
-		
-	@media all and (max-width: 950px){
-		img.imac{
-			width: 70%;
-		}
-	}
-		/* Styling and laying out the iMac image for the first sites section */
 	section.main.special header.major img.imac{
 		width: 80%;
 	}
