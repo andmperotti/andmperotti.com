@@ -1,4 +1,3 @@
-@import url(fontawesome-all.min.css);
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400';
 
 /*
@@ -3835,7 +3834,7 @@ input, select, textarea {
 	section.main.special header.major img.imac{
 		width: 80%;
 	}
-		
+	/* tablet and smaller width devices styling for the imac images */
 	@media all and (max-width: 950px){
 		img.imac{
 			width: 70%;
