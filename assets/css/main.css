@@ -3813,6 +3813,8 @@ input, select, textarea {
 		background-image: -ms-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
 		background-image: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
 	}
+
+	
 	/* Styling for demo/code buttons*/
 	.selection{
 		display: flex;
@@ -3830,13 +3832,14 @@ input, select, textarea {
 		border-bottom: none;
 	}
 
-	/* Styling and laying out the iMac image for the first sites section */
-	section.main.special header.major img.imac{
+	/* Styling and laying out the iMac image for the first sites section, and the phone picture for the second sites picture*/
+	section.main.special header.major img.imac, #fodmapmobile{
 		width: 80%;
 	}
 	/* tablet and smaller width devices styling for the imac images */
 	@media all and (max-width: 950px){
-		img.imac{
+		img.imac, #fodmapmobile{
 			width: 70%;
 		}
 	}
+
