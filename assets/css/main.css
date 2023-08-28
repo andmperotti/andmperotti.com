@@ -3782,19 +3782,27 @@ input, select, textarea {
 			}
 
 		}
-		/* techStack, for the container of logos that describe my tools */
+
+
+
+
+
+
+
+/* My additions */		
+/* techStack, for the container of logos that describe my tools */
 	.techStack {
 		display: flex;
 		justify-content: center;
 	}
-	/* tech class for icons in about me for tech stack */
+/* tech class for icons in about me for tech stack */
 	.tech{
 		font-size: 2.5rem;
 		list-style-type: none;
 		width: 50px
 	}
 
-	/* styling email address below name and title */
+/* styling email address below name and title */
 	.introEmail{
 		font-size: 100%;
 		line-height: 0;
@@ -3815,7 +3823,7 @@ input, select, textarea {
 	}
 
 	
-	/* Styling for demo/code buttons*/
+/* Styling for demo/code buttons*/
 	.selection{
 		display: flex;
 		justify-content: center;
@@ -3832,14 +3840,15 @@ input, select, textarea {
 		border-bottom: none;
 	}
 
-	/* Styling and laying out the iMac image for the first sites section, and the phone picture for the second sites picture*/
-	section.main.special header.major img.imac, #fodmapmobile{
-		width: 80%;
+
+/* Styling and laying out the project images for desktop devices*/
+	.projectPic{
+		width: 80%; 
 	}
-	/* tablet and smaller width devices styling for the imac images */
+
+/* tablet and smaller width devices styling for the project images */
 	@media all and (max-width: 950px){
-		img.imac, #fodmapmobile{
+		.projectPic{
 			width: 70%;
 		}
 	}
-
