@@ -1,3 +1,4 @@
+Replacing this site soon with one that showcases more projects.
 I used a template from HTML5 UP, and made changes to it for what I wanted.
 
 Stellar by HTML5 UP
