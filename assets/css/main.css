@@ -2618,6 +2618,8 @@ input, select, textarea {
 		cursor: default;
 		list-style: none;
 		padding-left: 0;
+		display: flex;
+		
 	}
 
 		ul.icons li {
@@ -3794,12 +3796,16 @@ input, select, textarea {
 	.techStack {
 		display: flex;
 		justify-content: center;
+		align-items: center;
 	}
 /* tech class for icons in about me for tech stack */
 	.tech{
 		font-size: 2.5rem;
 		list-style-type: none;
-		width: 50px
+		line-height: baseline;
+	}
+	.tech-text{
+		font-size: 1.8rem;
 	}
 
 /* styling email address below name and title */
@@ -3846,12 +3852,17 @@ input, select, textarea {
 		width: 80%; 
 	}
 
-/* tablet and smaller width devices styling for the project images */
+/* tablet and smaller width devices styling for the project images and text/icons*/
 	@media all and (max-width: 950px){
 		.projectPic{
 			width: 70%;
 		}
+		.tech{
+			font-size: 1.5rem;
+			list-style-type: none;
+			line-height: baseline;
+		}
+		.tech-text{
+			font-size: .9rem;
+		}
 	}
-
-/*Setting area for images; width and height for image elements to be saved*/
-
