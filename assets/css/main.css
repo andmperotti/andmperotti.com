@@ -3866,3 +3866,15 @@ input, select, textarea {
 			font-size: .9rem;
 		}
 	}
+
+/*Styling for poe gsf project image section*/
+.poeGsfImgContainer{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: center;
+}
+.poeGsfImgContainer .poeGsfImg{
+	max-width: 95%;
+	margin: 1px;
+}
