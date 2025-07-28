@@ -3878,3 +3878,11 @@ input, select, textarea {
 	max-width: 95%;
 	margin: 1px;
 }
+
+#profile-pic {
+
+}
+
+.mongo-pic {
+	max-width: 30%;
+}
