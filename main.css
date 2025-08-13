@@ -127,11 +127,17 @@ h2{
     color: black;
 }
 
-.about-me-link {
+.about-me-link,
+.contact-me-link,
+.contacts {
     text-decoration: none;
 }
 
-
+.contacts{
+    color: black;
+    display: flex;
+    gap: 1ch;
+}
 
 
 
@@ -205,3 +211,28 @@ i{
 
 
 
+#contact-me{
+    display:flex;
+}
+
+.contact-me-details {
+    max-width: 25vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    font-size: 150%;
+}
+
+.contact-me-image{
+    min-width: 35vw;
+}
+
+.contact-me-icons {
+    font-size: 200%;
+    color: black;
+}
+
+.contact-me-socials {
+    display: flex;
+    gap: 1ch;
+}
