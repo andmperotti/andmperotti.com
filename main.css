@@ -230,6 +230,7 @@ h3{
 
 .contact-me-image{
     min-width: 35vw;
+    object-fit: contain;
 }
 
 .contact-me-icons {
