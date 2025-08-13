@@ -67,11 +67,12 @@ body {
     background-color: lightblue;
     display: flex;
     flex-direction: column;
+    margin: 6vh 7vw;
+
 }
 
 #intro {
     display: flex;
-    margin: 6vh 7vw;
     position: relative;
     text-align: center;
 }
@@ -91,7 +92,7 @@ h1{
     font-size: calc(100% + 3vw);
     /* max-width: 40vw; */
     bottom: 1vh;
-    left: 4vw;
+    left: 5vw;
 }
 .about-me-img{
     /* min-width: 45vw; */
@@ -129,3 +130,78 @@ h2{
 .about-me-link {
     text-decoration: none;
 }
+
+
+
+
+
+
+
+#my-work{
+    display: flex;
+    margin-bottom: 10vh;
+    flex-wrap: wrap;
+    gap: 4vw;
+}
+
+.my-work-h2 {
+    margin-top: 15vh;
+    margin-bottom: 2vh;
+}
+
+svg {
+    width: 2ch;
+}
+i{
+    font-size: 2ch;
+}
+
+.project {
+    max-width: 25vw;
+    border: 1px solid lightgray;
+    box-shadow: 1px 1px 15px gray;
+    background-color: white;
+}
+
+.project-title{
+    display: flex;
+    padding: 1vh 2vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.socials {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 1ch;
+}
+
+.project-image-container{
+    position: relative;
+}
+
+.project-image{
+    height: 300px;
+    background-color: red;
+    width: 100%;
+}
+
+.project-image-caption{
+    position: absolute;
+    top: 50px;
+    font-size: calc(200% + .9vw);
+    color: white;
+    background-color: transparent;
+    left: 1ch;
+    word-break: keep-all;
+    line-break: normal;
+}
+
+.project-description{
+    padding: 1vh 2vw;
+    margin-bottom: 2vh
+}
+
+
+
