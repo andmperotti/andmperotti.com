@@ -112,6 +112,7 @@ h1{
 
 .about-me-socials {
     align-self: flex-end;
+    margin-top: 1ch;
 }
 
 h2{
@@ -169,11 +170,15 @@ i{
     background-color: white;
 }
 
-.project-title{
+.project-title-area{
     display: flex;
     padding: 1vh 2vw;
     display: flex;
     justify-content: space-between;
+}
+
+h3{
+    font-size: calc(80% + .5vw);
 }
 
 .socials {
@@ -188,18 +193,18 @@ i{
 }
 
 .project-image{
-    height: 300px;
+    height: 30vw;
     background-color: red;
     width: 100%;
 }
 
 .project-image-caption{
     position: absolute;
-    top: 50px;
-    font-size: calc(200% + .9vw);
+    top: .5ch;
+    font-size: calc(100% + 2vw);
     color: white;
     background-color: transparent;
-    left: 1ch;
+    left: .5ch;
     word-break: keep-all;
     line-break: normal;
 }
