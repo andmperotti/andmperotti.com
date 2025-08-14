@@ -59,16 +59,13 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-
-
 /*my css*/
+/*first section*/
 body {
     font-family: "Nata Sans", sans-serif;
     background-color: lightblue;
     display: flex;
     flex-direction: column;
-    margin: 12vh 5vw 5vh 9vw;
-
 }
 
 .about-me {
@@ -76,6 +73,8 @@ body {
     height: fit-content;
     max-width: 100%;
     padding: 1vh 1vw;
+    margin: 12vh 5vw 0 9vw;
+
 }
 .about-me,
 .about-me-img {
@@ -133,6 +132,7 @@ h2{
 .contact-me-link,
 .contacts {
     text-decoration: none;
+    line-break: anywhere;
 }
 
 .contacts{
@@ -141,24 +141,20 @@ h2{
     gap: 1ch;
 }
 
-
-
-
-
-
-
-
-
-
+/*second section*/
 #my-work{
-    display: flex;
+    padding: 0 5vw 0 9vw;
     margin-bottom: 10vh;
+}
+
+.my-work-projects{
+    display: flex;
     flex-wrap: wrap;
     gap: 4vw;
 }
 
 .my-work-h2 {
-    margin-top: 15vh;
+    margin-top: 5vh;
     margin-bottom: 2vh;
 }
 
@@ -170,6 +166,7 @@ i{
 }
 
 .project {
+    width: fit-content;
     max-width: 25vw;
     border: 1px solid lightgray;
     box-shadow: 1px 1px 15px gray;
@@ -182,38 +179,33 @@ i{
     display: flex;
     justify-content: space-between;
 }
+.project-name{
+    font-size: 150%;
+}
 
 h3{
     font-size: calc(80% + .5vw);
 }
 
-.socials {
+.project-links {
     display: flex;
     justify-content: end;
     align-items: center;
     gap: 1ch;
 }
 
-.project-image-container{
-    position: relative;
-}
 
 .project-image{
-    height: 30vw;
     background-color: red;
-    width: 100%;
+    height: fit-content;
+    object-fit: contain;
+    text-align: center;
+    min-height: 15vh;
+    font-size: calc(200% + .5vw);
+    color: white;
+    
 }
 
-.project-image-caption{
-    position: absolute;
-    top: .5ch;
-    font-size: calc(100% + 2vw);
-    color: white;
-    background-color: transparent;
-    left: .5ch;
-    word-break: keep-all;
-    line-break: normal;
-}
 
 .project-description{
     padding: 1vh 2vw;
@@ -221,10 +213,14 @@ h3{
 }
 
 
-
+/*final section */
 #contact-me{
     display:flex;
     justify-content: space-between;
+    gap: 1ch;
+    background-color: gray;
+    padding: 0 5vw 0 9vw;
+    padding-top: 5vh;
 }
 
 .contact-me-details {
@@ -232,12 +228,15 @@ h3{
     flex-direction: column;
     gap: 3vh;
     font-size: 150%;
+    flex: 0 1 auto;
+    max-width: 45vw;
 }
 
 .contact-me-image{
     min-width: 35vw;
     object-fit: contain;
-    margin-left: 1ch;
+    margin-bottom: 5vh;
+
 }
 
 .contact-me-icons {
@@ -275,4 +274,77 @@ h3{
     .project{
         max-width: 39vw;
     }
+}
+
+@media (max-width: 481px){
+    .about-me{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: none;
+        box-shadow: none;
+        margin: 0 5vw;
+        padding: 0;
+        margin-top: 2vh;
+    }
+    .about-me-img-heading-container{
+        float: none;
+        max-width: 90vw;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        height: fit-content;
+    }
+    .about-me-img{
+        transform: none;
+        object-fit: contain;
+        max-width: 90vw;
+    }
+    /*position h1 back to bottom of container*/
+    .about-me-img-h1{
+        text-align: center;
+        left: 1px;
+        bottom: 1px;
+        top: 0px;
+        right: 0px;
+        text-align: center;
+    }
+    .about-me-socials{
+        align-self: center;
+    }
+
+
+    /*change projects width to be as wide as they can be*/
+    #my-work{
+        margin: 0;
+        padding: 0;
+    }
+    .my-work-h2{
+        text-align: center;
+    }
+    .my-work-projects{
+        flex-direction: column;
+        align-items: center;
+    }
+    .project{
+        max-width: 90vw;
+    }
+
+
+    /*change contact me to use flex columns*/
+    #contact-me{
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+    }
+    .contact-me-details{
+        max-width: 90vw;
+    }
+    .contact-me-image{
+        min-width: 95vw;
+        margin-bottom: 0;
+    }
+
+    /*change margins, ie: contact me image has none*/
 }
