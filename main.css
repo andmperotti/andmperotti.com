@@ -237,6 +237,7 @@ h3{
 .contact-me-image{
     min-width: 35vw;
     object-fit: contain;
+    margin-left: 1ch;
 }
 
 .contact-me-icons {
@@ -269,5 +270,9 @@ h3{
     }
     .about-me-h2 {
         text-align: center;
+    }
+
+    .project{
+        max-width: 39vw;
     }
 }
