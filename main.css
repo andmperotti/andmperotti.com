@@ -226,10 +226,11 @@ i{
     flex-direction: column;
     position: fixed;
     top: 40%;
-}
-.nav-links svg{
-    width: 2.5ch;
     padding-left: 1px;
+
+}
+.nav-links-svg{
+    width: 2.5ch;
 }
 
 
