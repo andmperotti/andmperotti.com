@@ -1,9 +1,10 @@
-/*css reset lines 8 to 62*/
-/* first section lines 67 to 132*/
-/* second section lines 135 to 186*/
-/*third section lines 190 to 221*/
-/*media query for tablet devices lines 225 to 282*/
-/*media query for mobile devices lines 286 to 339*/
+/*css reset lines 9 to 63*/
+/* first section lines 68 to 132*/
+/* second section lines 135 to 187*/
+/*third section lines 189 to 220*/
+/*nav section lines 222 to 232 */
+/*media query for tablet devices lines 235 to 293*/
+/*media query for mobile devices lines 297 to 353*/
 
 /*css reset by josh comeau (https://www.joshwcomeau.com/css/custom-css-reset/)*/
 /* 1. Use a more-intuitive box-sizing model */
@@ -63,7 +64,6 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-/*my css*/
 /*first section*/
 body {
     font-family: "Nata Sans", sans-serif;
@@ -219,6 +219,17 @@ i{
     gap: 1ch;
 }   
 
+/*nav*/
+.nav-links{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 40%;
+}
+.nav-links svg{
+    width: 2.5ch;
+}
 
 
 /* tablet query */
