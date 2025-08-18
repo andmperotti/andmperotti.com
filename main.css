@@ -1,3 +1,10 @@
+/*css reset lines 8 to 62*/
+/* first section lines 67 to 132*/
+/* second section lines 135 to 186*/
+/*third section lines 190 to 221*/
+/*media query for tablet devices lines 225 to 282*/
+/*media query for mobile devices lines 286 to 339*/
+
 /*css reset by josh comeau (https://www.joshwcomeau.com/css/custom-css-reset/)*/
 /* 1. Use a more-intuitive box-sizing model */
 *, *::before, *::after {
@@ -56,9 +63,6 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-
-
-
 /*my css*/
 /*first section*/
 body {
@@ -67,149 +71,119 @@ body {
     display: flex;
     flex-direction: column;
 }
-
 .about-me {
     background-color: white;
-    height: fit-content;
-    max-width: 100%;
-    padding: 1vh 1vw;
-    margin: 12vh 5vw 0 9vw;
+    position: relative;
+    box-shadow: 1px 1px 20px gray;
+    margin: 0 6vw;
+    margin-top: 15vh;
+    padding-left: 41%;
+}
+.about-me-img-heading-container{
+    position: absolute;
+    left: 0;
+    top: -3vw;
+    width: 40vw;
 
 }
-.about-me,
-.about-me-img {
-    box-shadow: 1px 1px 20px black;
-}
-
 .about-me-img{
     height: auto;
-    object-fit: fill;
-    transform: scale(1.2);
-    max-width: 45vw;
+    width: 100%;
 }
-
-.about-me-img-heading-container{
-    position: relative;
-    height: fit-content;
-    float: left;
-    margin: 0 6vw 45px 0;
-}
-
 .about-me-img-h1{
     position: absolute;
     color: #ffffff;
     text-shadow: 2px 2px 3px black;
     z-index: 1;
-    font-size: 300%;
+    font-size: calc(350% + 1vw);
     bottom: 1px;
-    left: 70px;
+    text-align: center;
+    width: 100%;
+    line-height: 90%;
 }
-
-
 .about-me-socials {
     display: flex;
     align-self: flex-end;
     justify-self: flex-end;
-    margin-top: 1ch;
     gap: 1ch;
     justify-content: end;
+    margin-top: 2vh;
 }
-
-h2{
-    font-size: calc(100% + 2vw);
-}
-
-.about-me-content {
-    font-size: calc(100% + .4vw);
-}
-
 .about-me-icons {
-    font-size: 200%;
+    font-size: 300%;
     color: black;
 }
-
+h2{
+    font-size: calc(250% + 1vw);
+}
+.about-me-content {
+    font-size: calc(125% + .4vw);
+}
 .about-me-link,
 .contact-me-link,
 .contacts {
     text-decoration: none;
     line-break: anywhere;
 }
-
 .contacts{
     color: black;
     display: flex;
     gap: 1ch;
 }
 
+
 /*second section*/
 #my-work{
-    padding: 0 5vw 0 9vw;
-    margin-bottom: 10vh;
+    margin: 0 6vw;
+    margin-top: 20vh;
 }
-
 .my-work-projects{
     display: flex;
     flex-wrap: wrap;
     gap: 4vw;
+    justify-content: space-between;
 }
-
-.my-work-h2 {
-    margin-top: 5vh;
-    margin-bottom: 2vh;
-}
-
 svg {
     width: 2ch;
 }
 i{
     font-size: 2ch;
 }
-
 .project {
-    width: fit-content;
-    max-width: 25vw;
+    /* width: 100%; */
+    max-width: 26vw;
     border: 1px solid lightgray;
     box-shadow: 1px 1px 15px gray;
     background-color: white;
 }
-
 .project-title-area{
     display: flex;
-    padding: 1vh 2vw;
     display: flex;
     justify-content: space-between;
 }
 .project-name{
     font-size: 150%;
 }
-
 h3{
-    font-size: calc(80% + .5vw);
+    font-size: calc(200% + 1vw);
 }
-
 .project-links {
     display: flex;
     justify-content: end;
     align-items: center;
     gap: 1ch;
 }
-
-
 .project-image{
     background-color: red;
     height: fit-content;
     object-fit: contain;
     text-align: center;
-    min-height: 15vh;
+    min-height: 25vh;
     font-size: calc(200% + .5vw);
     color: white;
-    
-}
-
-
-.project-description{
-    padding: 1vh 2vw;
-    margin-bottom: 2vh
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -219,10 +193,11 @@ h3{
     justify-content: space-between;
     gap: 1ch;
     background-color: gray;
-    padding: 0 5vw 0 9vw;
-    padding-top: 5vh;
+    padding: 0 6vw;
+    margin-top: 15vh;
+    padding-top: 8vh;
+    padding-bottom: 4vh;
 }
-
 .contact-me-details {
     display: flex;
     flex-direction: column;
@@ -231,19 +206,15 @@ h3{
     flex: 0 1 auto;
     max-width: 45vw;
 }
-
 .contact-me-image{
     min-width: 35vw;
     object-fit: contain;
-    margin-bottom: 5vh;
 
 }
-
 .contact-me-icons {
     font-size: 200%;
     color: black;
 }
-
 .contact-me-socials {
     display: flex;
     gap: 1ch;
@@ -251,100 +222,118 @@ h3{
 
 
 
-@media (max-width: 769px){
+/* tablet query */
+@media (min-width: 482px) and (max-width: 769px){
+    .about-me {
+        position: static;
+        margin: 0 10vw;
+        margin-top: 12vh;
+    }
     .about-me-img-heading-container{
-        position: relative;
         float: left;
-        max-width: 60vw;
-        margin: 0 5ch 30px 0;
+        min-width: 45vw;
+        height: 35vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        top: 5vh;
+        left: 5vw;
+        clear: left;
+    }
+    .about-me-img {
+        object-fit: fill;
     }
     .about-me-img-h1 {
-        bottom: 0;
-        left: 0;
-        top: -80px;
-        right: -30vw;
-        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: -250px;
         height: fit-content;
+        font-size: calc(250% + 1vw);
+        width: 75vw;
         text-align: end;
+        clear: both;
     }
     .about-me-h2 {
         text-align: center;
     }
-
+    .about-me-content{
+        font-size: calc(100% + .4vw);
+        padding-left: 1vw;
+    }
+    .about-me-icons {
+        font-size: 200%;
+    }
+    #my-work {
+        margin: 0 10vw;
+        margin-top: 5vh;
+    }
     .project{
-        max-width: 39vw;
+        max-width: 36vw;
+    }
+    .project-image{
+        font-size: calc(200% + .2vw);
+    }
+    #contact-me {
+        padding: 4vh 10vw;
+    }
+    h2{
+        font-size: calc(140% + 1vw);
     }
 }
 
+
+
+/*mobile query*/
 @media (max-width: 481px){
     .about-me{
+        margin: 0 6vw;
+        margin-top: 4vh;
         display: flex;
         flex-direction: column;
-        align-items: center;
         background: none;
         box-shadow: none;
-        margin: 0 5vw;
-        padding: 0;
-        margin-top: 2vh;
+    }
+    .about-me{
+        padding-left: 0;
     }
     .about-me-img-heading-container{
         float: none;
-        max-width: 90vw;
-        margin: 0;
-        padding: 0;
+        width: 100%;
         position: relative;
-        height: fit-content;
     }
-    .about-me-img{
-        transform: none;
-        object-fit: contain;
-        max-width: 90vw;
-    }
-    /*position h1 back to bottom of container*/
     .about-me-img-h1{
-        text-align: center;
-        left: 1px;
-        bottom: 1px;
-        top: 0px;
-        right: 0px;
-        text-align: center;
+        line-height: 90%;
     }
     .about-me-socials{
         align-self: center;
     }
 
-
-    /*change projects width to be as wide as they can be*/
-    #my-work{
-        margin: 0;
-        padding: 0;
-    }
-    .my-work-h2{
+    h2 {
         text-align: center;
+    }
+    #my-work{
+        margin: 0 6vw;
+        margin-top: 10vh;
     }
     .my-work-projects{
         flex-direction: column;
         align-items: center;
+        gap: 7vh;
     }
     .project{
         max-width: 90vw;
     }
-
-
-    /*change contact me to use flex columns*/
     #contact-me{
         flex-direction: column;
-        margin: 0;
-        padding: 0;
         align-items: center;
+        gap: 10vh;
+        margin-top: 16vh;
+
     }
     .contact-me-details{
         max-width: 90vw;
     }
     .contact-me-image{
         min-width: 95vw;
-        margin-bottom: 0;
     }
-
-    /*change margins, ie: contact me image has none*/
 }
