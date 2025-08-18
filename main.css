@@ -173,7 +173,8 @@ i{
 .project-image{
     background-color: red;
     text-align: center;
-    min-height: 400px;
+    /* min-height: 400px; */
+    height: 20vw;
     font-size: calc(200% + .5vw);
     color: white;
     display: flex;
@@ -270,6 +271,7 @@ i{
     }
     .project-image{
         font-size: calc(200% + .2vw);
+        height: 45vw;
     }
     #contact-me {
         padding: 4vh 10vw;
@@ -320,6 +322,9 @@ i{
     }
     .project{
         max-width: 90vw;
+    }
+    .project-image{
+        height: 60vw;
     }
     #contact-me{
         flex-direction: column;
