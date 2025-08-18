@@ -71,7 +71,7 @@ body {
     display: flex;
     flex-direction: column;
 }
-.about-me {
+#about-me {
     background-color: white;
     position: relative;
     box-shadow: 1px 1px 20px gray;
@@ -223,7 +223,7 @@ i{
 
 /* tablet query */
 @media (min-width: 482px) and (max-width: 769px){
-    .about-me {
+    #about-me {
         position: static;
         margin: 0 10vw;
         margin-top: 12vh;
@@ -285,7 +285,7 @@ i{
 
 /*mobile query*/
 @media (max-width: 481px){
-    .about-me{
+    #about-me{
         margin: 0 6vw;
         margin-top: 4vh;
         display: flex;
@@ -293,7 +293,7 @@ i{
         background: none;
         box-shadow: none;
     }
-    .about-me{
+    #about-me{
         padding-left: 0;
     }
     .about-me-img-heading-container{
