@@ -150,22 +150,19 @@ i{
     font-size: 2ch;
 }
 .project {
-    /* width: 100%; */
     max-width: 26vw;
-    border: 1px solid lightgray;
     box-shadow: 1px 1px 15px gray;
     background-color: white;
+    height: fit-content;
 }
 .project-title-area{
     display: flex;
-    display: flex;
     justify-content: space-between;
+    padding: 1vw;
+
 }
 .project-name{
-    font-size: 150%;
-}
-h3{
-    font-size: calc(200% + 1vw);
+    font-size: calc(140% + .1vw);
 }
 .project-links {
     display: flex;
@@ -175,17 +172,18 @@ h3{
 }
 .project-image{
     background-color: red;
-    height: fit-content;
-    object-fit: contain;
     text-align: center;
-    min-height: 25vh;
+    min-height: 400px;
     font-size: calc(200% + .5vw);
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
+.project-description{
+    height: 180px;
+    padding: .5vh 1vw;
+}
 
 /*final section */
 #contact-me{
